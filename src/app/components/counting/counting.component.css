@@ -1,0 +1,20 @@
+button {
+    margin: 2%;
+}
+
+.number {
+    border-radius: 10px;
+    background-color: #e8f5e9;
+    color: red;
+    padding: 1%;
+    margin: 2%;
+    width: 30%;
+    border: 2px solid darksalmon;
+}
+
+.number-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 3%;
+}

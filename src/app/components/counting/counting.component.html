@@ -1,0 +1,14 @@
+<div *ngIf="numbers?.length > 0; else noNumber" class="center number-list">
+    <div *ngFor="let number of numbers" class="number z-depth-3">
+            <h4><strong>{{number.count}}</strong></h4>
+            <button class="btn" (click)="increaseCount(number)"><i class="material-icons">add</i></button>
+            <button class="btn lime lighten-2" (click)="decreaseCount(number)"><i class="material-icons">arrow_downward</i></button>
+            <button *ngIf="isLoggedIn" class="btn  orange" (click)="reset(number)" ><i class="material-icons">cached</i></button>
+            <button *ngIf="isLoggedIn" class="btn red" (click)="delete(number)"><i class="material-icons">cancel</i></button>
+    </div>
+
+</div>
+<ng-template #noNumber>
+    <hr>
+    <h5>No Number</h5>
+</ng-template>

@@ -1,0 +1,23 @@
+.auth {
+    padding: 5%;
+    margin: 5% auto;
+}
+
+.welcome {
+    background-color: #ffa726;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px 40px;
+}
+
+.addNumber {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.add {
+    width: fit-content;
+}
